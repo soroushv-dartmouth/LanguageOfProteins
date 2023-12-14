@@ -1,3 +1,12 @@
+# Data:
+We keep the data in a shared Dropbox folder due to its large size. The link to the data folder is https://www.dropbox.com/scl/fo/ih82ahot52jmy52pjym81/h?rlkey=wpjl06vv7l1wxvbsthume1wmv&dl=0.
+Within the folder, the primary sequences of proteins are stored under the subdirectory "Primary_Structure_Files" and the secondary sequences in "Secondary_Structure_Files".
+The "Data Splits" folder contains the splits of data used in our evaluations.
+The "Pivot_Proteins" folder contains the pivot proteins used in the few-shot evaluations.
+
+# Models:
+The pre-trained and fine-tuned models are stored in a shared Dropbox folder, the link to which is https://www.dropbox.com/scl/fo/wnsemfj0anzckd5ofabgl/h?rlkey=66rncj2dltyz6h13fx0030t4v&dl=0.
+
 # Functionalities:
 
 ## Pre-Training
