@@ -1,11 +1,13 @@
 # Functionalities:
 
 ## Pre-Training:
-### Training Tokenizer:
-The script 'Pre-Training/train_tokenizer.py' handles the training of the tokenizer of PROSSL. The 'files' variable should be set to the path of the data file, a text file containing all the sequences separated by newline.
+### Tokenizer Training
+The tokenizer for PROSSL is trained using the script 'Pre-Training/train_tokenizer.py'. This script requires setting the 'files' variable to the path of your data file. The data file should be a text file with each sequence separated by a newline.
 
-### Training Model via MLM:
-The script 'Pre-Training/pretrain.py' handles the pre-training of PROSSL. The data file should be the same in format as that used to train the tokenizer. The trained tokenizer in the previous step is loaded into the variable 'tokenizer'.
+
+### Model Pre-Training via MLM
+The script 'Pre-Training/pretrain.py' is responsible for the pre-training of PROSSL. This step utilizes the same format for the data file as in tokenizer training. The tokenizer, trained in the previous step, is then loaded into the 'tokenizer' variable in this script.
+
 
 ## Master File Generation:
 
