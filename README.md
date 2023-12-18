@@ -11,11 +11,27 @@ The pre-trained and fine-tuned models are stored in a shared Dropbox folder, the
 # Functionalities:
 
 ## Pre-Training
-### Tokenizer Training
-The tokenizer for PROSSL is trained using the script 'Pre-Training/train_tokenizer.py'. This script requires setting the 'files' variable to the path of your data file. The data file should be a text file with each sequence separated by a newline.
+## Overview
+There are two Python files included in the "Pre-Training" folder. One is `train_tokenizer.py` for tokenizer training, while the other one is `train_model.py` for pretrain the Roberta.
 
-### Model Pre-Training via MLM
-The script 'Pre-Training/pretrain.py' is responsible for the pre-training of PROSSL. This step utilizes the same format for the data file as in tokenizer training. The tokenizer, trained in the previous step, is then loaded into the 'tokenizer' variable in this script.
+## Tokenizer training 
+The file `train_tokenizer.py` is designed to train a ByteLevelBPETokenizer compatible with the Roberta model. The path should be modified to include all training files.
+
+Usage: `python train_tokenizer_1.py`
+
+## Model training
+The file `train_model.py` is to pretrain a Roberta model. Which includes:
+
+* GPU Environment Setup
+* Tokenizer loading from previous training
+* RoBERTa Configuration and Initialization
+* Creates a LineByLineTextDataset and Initializes a data collator
+* Training Configuration and Trainer Initialization
+* Train and Save the model
+
+Please also modify the path to the data before training.
+
+Usage: `python train_model.py`
 
 ## Master File Generation
 
